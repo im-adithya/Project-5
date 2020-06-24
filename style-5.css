@@ -1,0 +1,189 @@
+@import url('https://sf.abarba.me/font.css');
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  /*box-sizing: border-box;*/
+  font-family: 'SF Display';
+}
+
+body {
+
+  background-color: black;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+#welcome-section  {
+  background-image: linear-gradient( 110deg, rgba(33, 150, 243, 0.5), black , black);
+  text-align: left;
+  font-size: 30px;
+  height: 100vh;
+  border-bottom: #2196f3 solid 0.1vh;
+}
+
+#welcome-section > h1 {
+  padding-left: 15vw;
+  padding-top: 200px;
+}
+
+#projects {
+  background-image: linear-gradient( 110deg, black, black, rgba(33, 150, 243, 0.5));
+  padding-top: 6vh ;
+  border-bottom: #2196f3 solid 0.1vh;
+}
+
+#projects > h2 {
+  text-align: center;
+  font-size: 28px;
+}
+
+.project-tile > img {
+  width: 25vw;
+  height: auto;
+  border: 10px solid #1a2041;
+  border-radius: 3px;
+}
+
+.project-tile > a > p {
+  background-color: #2196f3;
+  color:white;
+  margin: 0px auto;
+  text-align: center;
+  padding: 8px 0px;
+  border-radius: 2px;
+  font-family: monospace;
+}
+
+.projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0px 0px;
+  height: 50vh;
+  margin-top: 120px;
+}
+
+.project-tile > a {
+  color: #1a2041;
+  font-family: monospace;
+  font-size: 16px;
+}
+
+span {
+  color: #2196f3;
+  font-family:monospace;
+  font-weight: 500;
+}
+
+.project-tile > a:hover > p > span {
+  color: #1e1234;
+}
+
+#contact > h2 {
+  text-align: center;
+  font-size: 28px;
+}
+
+#contact {
+  background-color: black;
+  padding:50px 20px 0px 20px;
+  height: 25vh;
+}
+
+#contact > ul {
+  margin-top: 30px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+#contact > ul > a > li{
+  font-family:'Poppins';
+  color: white;
+
+}
+
+#contact > ul > a:hover > li{
+  transform: scale(1.1,1.1);
+}
+
+#navbar {
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+  background-color: #2183d1;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+#navbar > ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+#navbar > ul > a > li {
+  font-family: 'Poppins';
+  color: white;
+  padding: 15px 30px 15px 30px;
+}
+
+#navbar > ul > a:hover > li {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width:700px) {
+  body {
+    font-size: 13px;
+  }
+
+  #welcome-section > h1  {
+    font-size: 28px;
+    padding-left: 12vw;
+    padding-top: 280px;
+  }
+
+  /*PROJECTS*/
+
+
+  #projects > h2 {
+    font-size: 26px;
+  }
+
+  .project-tile > a > p {
+    margin: 0px 95px;
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px 0px;
+    height: 80vh;
+    margin-top: 120px;
+  }
+
+  .project-tile {
+    position: relative;
+    padding: 10px 0px;
+  }
+
+  .project-tile > img {
+    width: 55vw;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 10px;
+  }
+
+
+}
